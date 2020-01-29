@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/profil"
+        android:title="Profil" />
+    <item
+        android:id="@+id/siparis"
+        android:icon="@drawable/siparis"
+        android:title="Siparişler" />
+    <item
+        android:id="@+id/urunler"
+        android:icon="@drawable/urun"
+        android:title="Ürünler" />
+    <item
+        android:id="@+id/degisim"
+        android:icon="@drawable/degisim"
+        android:title="Değişimler" />
+    <item
+        android:id="@+id/grafik"
+        android:icon="@drawable/finans"
+        android:title="Analiz" />
+
+</menu>

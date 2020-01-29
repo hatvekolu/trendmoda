@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.trendmoda"
+        minSdkVersion 15
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 71
+        versionName "1.71"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+
+    compile 'com.github.blackfizz:eazegraph:1.2.2@aar'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'it.sephiroth.android.library.picasso:picasso:2.5.2.4b'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    compile 'com.android.support:cardview-v7:28.0.0'
+    compile 'com.mikhaellopez:circularprogressbar:2.0.0'
+    compile 'com.github.MdFarhanRaja:SearchableSpinner:2.0'
+    compile 'com.bogdwellers:pinchtozoom:0.1'
+    compile 'com.vincan:medialoader:1.0.0'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
